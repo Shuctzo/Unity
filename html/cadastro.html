@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!-- Definindo o conjunto de caracteres UTF-8 e a meta tag de visualização responsiva para dispositivos móveis -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- Título da página que aparece na aba do navegador -->
+        <title>Unity+ | Plataforma de Diagnóstico Socioeconômico Comunitário.</title>
+
+        <!-- Link para os ícones do Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Meta tags para SEO -->
+        <meta name="description" content="Unity Plus é uma plataforma de diagnóstico socioeconômico comunitário que conecta você e sua comunidade com a Petrobras.">
+        <meta name="robots" content="index, follow">
+
+        <!-- Meta tags adicionais -->
+        <meta name="author" content="Integra's Team">
+        <meta name="copyright" content="Integra's Team">
+        <meta name="keywords" content="Unity, Plataforma, Diagnóstico, Socioeconômico, Comunitário, Petrobras">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="application-name" content="Unity Plus">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../image/favicon_io/mstile-150x150.png">
+        <meta name="apple-mobile-web-app-title" content="Unity Plus">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <!-- Ícones do site -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../image/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../image/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../image/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="../image/favicon_io/site.webmanifest">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body class="d-flex flex-column">
+        <header>
+            <nav class="navbar navbar-expand-lg py-3 mb-1">
+                <div class="container">
+                    <a href="../index.html" class="navbar-brand">
+                        <img src="../image/unity_logo.png" alt="Unity+ Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="menu-navigation">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a href="../index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="relato.html" class="nav-link">Relato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="forum.html" class="nav-link">Fórum</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="dashboards.html" class="nav-link">Gráficos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contato.html" class="nav-link">Contato</a>
+                            </li>
+                            <li class="nav-item ms-lg-3">
+                                <a href="login.html" class="btn btn-unity">Entrar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex-grow-1">
+            <section class="signup-section bg-light fade-up">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="signup-container">
+                                <div class="row g-0">
+                                    <!-- Formulário de Cadastro -->
+                                    <div class="col-lg-7">
+                                        <div class="signup-header">
+                                            <h1>Crie sua conta</h1>
+                                            <p>Junte-se à comunidade Unity+ e contribua para o desenvolvimento comunitário</p>
+                                        </div>
+                                        <div class="signup-form">
+                                            <form id="signupForm">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group mb-2">
+                                                            <label for="firstName" class="form-label">Nome</label>
+                                                            <input type="text" class="form-control" id="firstName" placeholder="Digite seu nome" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group mb-2">
+                                                            <label for="lastName" class="form-label">Sobrenome</label>
+                                                            <input type="text" class="form-control" id="lastName" placeholder="Digite seu sobrenome" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group mb-2">
+                                                    <label for="email" class="form-label">E-mail</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="exemplo@email.com" required>
+                                                </div>
+
+                                                <div class="form-group mb-2">
+                                                    <label for="cpf" class="form-label">CPF</label>
+                                                    <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2">
+                                                        <div class="form-group position-relative">
+                                                            <label for="password" class="form-label">Senha</label>
+                                                            <input type="password" class="form-control" id="password" placeholder="Crie uma senha" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2">
+                                                        <div class="form-group position-relative">
+                                                            <label for="confirmPassword" class="form-label">Confirme a Senha</label>
+                                                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirme sua senha" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group mb-2">
+                                                    <label for="userType" class="form-label">Tipo de Usuário</label>
+                                                    <select class="form-select" id="userType" required>
+                                                        <option value="" selected disabled>Selecione seu perfil</option>
+                                                        <option value="community">Membro da Comunidade</option>
+                                                        <option value="company">Representante de Empresa</option>
+                                                        <option value="government">Agente Governamental</option>
+                                                        <option value="ngo">ONG/Organização Social</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group mb-2">
+                                                    <label for="community" class="form-label">Comunidade</label>
+                                                    <select class="form-select" id="community" required>
+                                                        <option value="" selected disabled>Selecione sua comunidade</option>
+                                                        <option value="community1">Comunidade Rio das Pedras</option>
+                                                        <option value="community2">Comunidade Santa Marta</option>
+                                                        <option value="community3">Comunidade Paraisópolis</option>
+                                                        <option value="community4">Comunidade Vila Cruzeiro</option>
+                                                        <option value="other">Outra comunidade</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-check mb-4">
+                                                    <input class="form-check-input" type="checkbox" id="terms" required>
+                                                    <label class="form-check-label" for="terms">
+                                                        Concordo com os <a href="#" class="login-link">Termos de Uso</a> e <a href="#" class="login-link">Política de Privacidade</a>
+                                                    </label>
+                                                </div>
+
+                                                <button type="submit" class="btn btn-unity w-100 py-3">Criar Conta</button>
+                                            </form>
+
+                                            <div class="divider">
+                                                <span>OU</span>
+                                            </div>
+
+                                            <div class="social-login d-flex flex-column gap-2">
+                                                <button class="btn btn-outline-danger w-100">
+                                                    <i class="bi bi-google"></i> Cadastre-se com Google
+                                                </button>
+                                                <button class="btn btn-outline-primary">
+                                                    <i class="bi bi-facebook"></i> Cadastre-se com Facebook
+                                                </button>
+                                            </div>
+
+                                            <div class="login-link">
+                                                Já tem uma conta? <a href="login.html">Faça login aqui</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Lado direito com informações -->
+                                    <div class="col-lg-5 d-none d-lg-block">
+                                        <div class="signup-image h-100">
+                                            <h3>Por que se cadastrar?</h3>
+                                            <ul>
+                                                <li>Contribua com o diagnóstico socioeconômico da sua comunidade</li>
+                                                <li>Acesse dados atualizados sobre sua região</li>
+                                                <li>Participe do fórum comunitário</li>
+                                                <li>Receba informações sobre projetos e investimentos</li>
+                                                <li>Faça parte da transformação social</li>
+                                            </ul>
+                                            <div class="mt-4">
+                                                <div class="d-flex align-items-center mb-3">
+                                                    <i class="bi bi-shield-lock fs-3 me-3"></i>
+                                                    <div>
+                                                        <strong>Segurança de Dados</strong>
+                                                        <p class="mb-0">Protegemos suas informações de acordo com a LGPD</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-people-fill fs-3 me-3"></i>
+                                                    <div>
+                                                        <strong>Comunidade Ativa</strong>
+                                                        <p class="mb-0">Mais de 500 comunidades já cadastradas</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5 bg-unity1">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 text-center text-lg-start mb-5 mb-lg-0">
+                            <h2 class="text-white mb-3">Faça parte dessa transformação</h2>
+                            <p class="lead text-white mb-0">Sua comunidade também pode se beneficiar do Unity+</p>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <a href="cadastro.html" class="btn btn-light btn-lg px-5 py-3 fw-bold">Cadastre-se Agora</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <img src="../image/unity_logo_tree.png" class="img-fluid" alt="Logo da Plataforma Unity Plus" style="max-width: 12%;">
+                            <h3>UNITY+</h3>
+                        </div>
+                        <p>Plataforma de Diagnóstico Socioeconômico Comunitário que conecta comunidades e empresas para um desenvolvimento sustentável.</p>
+                        <div class="social-links mt-4">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h4 class="footer-title">Links Rápidos</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="../index.html">Início</a></li>
+                            <li class="mb-2"><a href="relato.html">Relato</a></li>
+                            <li class="mb-2"><a href="forum.html">Fórum</a></li>
+                            <li class="mb-2"><a href="dashboards.html">Gráficos</a></li>
+                            <li class="mb-2"><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <h4 class="footer-title">Recursos</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">Perguntas Frequentes</a></li>
+                            <li class="mb-2"><a href="#">Política de Privacidade</a></li>
+                            <li class="mb-2"><a href="#">Termos de Uso</a></li>
+                            <li class="mb-2"><a href="#">Tutoriais</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <h4 class="footer-title">Contato</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Av. das Comunidades, 1234</li>
+                            <li class="mb-2"><i class="bi bi-telephone me-2"></i> (00) 4002-8922</li>
+                            <li class="mb-2"><i class="bi bi-envelope me-2"></i> contato@unityplus.com</li>
+                            <li class="mb-2"><i class="bi bi-clock me-2"></i> Seg-Sex: 8h-18h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start">
+                            &copy; 2025 Unity+. Todos os direitos reservados.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            Desenvolvido por <a href="#" class="text-unity3 fw-bold">Integra Tecnologia</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div href="#" class="user rounded text-center fade-up">
+            <span>Acesso: <br> <strong>TODOS USUÁRIOS</strong></span>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
+        crossorigin="anonymous"></script>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
